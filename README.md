@@ -9,6 +9,8 @@
 
 Do you like eel-based puzzle games?  Ready for some mind-bending diagonal-moving action?  No?  Nevertheless, let me introduce you to It's EELectric!.
 
+For the kids version, see [It's EELectric!](https://github.com/sbj42/its-eelectric-junior).
+
 ![title image](promo/title2.png)
 
 In this game you star as an apex predator, the deadly _Electrophorus electricus_, better known as the electric eel. This is not a realistic eel simulation. In fact, I looked it up: electric eels don't look like this thing at all.
