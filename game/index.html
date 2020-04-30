@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <link href='https://fonts.googleapis.com/css?family=Lakki+Reddy|Itim' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="eelectric.css">
+    <link rel="shortcut icon" type="image/png" href="favicon.png"/>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.0.0/jquery.min.js"></script>
+    <script src="jquery.cookie.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/1.18.5/TweenLite.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/1.18.5/TimelineLite.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/1.18.5/plugins/CSSPlugin.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/1.18.5/plugins/AttrPlugin.min.js"></script>
+    <script src="eelectric.js"></script>
+    <title>It&apos;s EELectric!</title>
+  </head>
+  <body>
+    <div id="apology">
+      <!--[if lt IE 9]>
+        <div style="margin: 20px; color: #fff">
+          This game requires a modern browser
+        </div>
+      <![endif]-->
+      <![if gte IE 9]>
+      <noscript>
+        <div style="margin: 20px; color: #fff">
+          This game requires JavaScript
+        </div>
+      </noscript>
+      <![endif]>
+    </div>
+    <div id="intro" class="pagecontainer">
+      <div class="page">
+        <img id="introstar" src="svg/starfish1a.svg"/>
+        <div id="title1">it's</div>
+        <div id="title2">EELectric!</div>
+        <div id="credit">by <a href="https://github.com/sbj42">James Clark</a></div>
+        <div id="introplay"><a href="javascript:void 0">Play</a></div>
+      </div>
+    </div>
+    <![if gte IE 9]>
+    <div id="menu" class="pagecontainer hide">
+      <div class="page">
+        <div id="menuback"><a href="javascript:void 0">Back</a></div>
+        <div id="menuexplain">Choose a level</div>
+        <div id="menu0">
+          <img class="menuimg" src="svg/starfish1a.svg"/> Tutorial
+          <div id="menu0levels"></div>
+        </div>
+        <div id="menu1">
+          <img class="menuimg" src="svg/guppy1a.svg"/> Guppy
+          <div id="menu1levels"></div>
+        </div>
+        <div id="menu2">
+          <img class="menuimg" src="svg/catfish1a.svg"/> Catfish
+          <div id="menu2levels"></div>
+        </div>
+        <div id="menu3">
+          <img class="menuimg" src="svg/piranha1a.svg"/> Piranha
+          <div id="menu3levels"></div>
+        </div>
+        <div id="menu4">
+          <img class="menuimg" src="svg/stingray1a.svg"/> Stingray
+          <div id="menu4levels"></div>
+        </div>
+        <div id="menuselect"></div>
+      </div>
+    </div>
+    <div id="game" class="pagecontainer hide">
+      <div class="page">
+        <div id="window">
+          <div id="board_outer">
+            <div id="board">
+            </div>
+          </div>
+          <img id="border" />
+          <div id="victory">
+            <div id="victorytext">EEL WINS!</div>
+            <div id="vnextgroup" class="active">
+              <img id="vnkey" class="gamekey" />
+              <div id="vnexttext" class="gametext">Next</div>
+            </div>
+            <div id="vrestartgroup" class="active">
+              <img id="vrkey" class="gamekey" />
+              <div id="vrestarttext" class="gametext">Restart</div>
+            </div>
+            <div id="vquitgroup" class="active">
+              <img id="vesckey" class="gamekey" />
+              <div id="vquittext" class="gametext">Quit</div>
+            </div>
+          </div>
+          <div id="defeat">
+            <div id="defeattext">EEL LOSES!</div>
+            <div id="drestartgroup" class="active">
+              <img id="drkey" class="gamekey" />
+              <div id="drestarttext" class="gametext">Restart</div>
+            </div>
+            <div id="dquitgroup" class="active">
+              <img id="desckey" class="gamekey" />
+              <div id="dquittext" class="gametext">Quit</div>
+            </div>
+          </div>
+        </div>
+        <div id="console">
+          <img id="qkey" class="gamekey gameoption" />
+          <img id="wkey" class="gamekey gameoption" />
+          <img id="akey" class="gamekey gameoption" />
+          <img id="skey" class="gamekey gameoption" />
+          <img id="_key" class="gamekey gameoption" />
+          <div id="leveldesc" class="gametext"></div>
+          <div id="hungertext" class="hunger gametext">Hunger:</div>
+          <img id="hunger1" class="hunger" />
+          <div id="hungerbar" class="hunger"></div>
+          <img id="hunger2" class="hunger" />
+          <div id="chargetext" class="charge gametext">Charge: <span id="chargestatus"></span></div>
+          <div id="quitgroup" class="active gameoption">
+            <img id="esckey" class="gamekey" />
+            <div id="quittext" class="gametext">Quit</div>
+          </div>
+          <div id="restartgroup" class="gameoption">
+            <img id="rkey" class="gamekey" />
+            <div id="restarttext" class="gametext">Restart</div>
+          </div>
+          <img id="star1" class="gamestar" />
+          <img id="star2" class="gamestar" />
+          <img id="star3" class="gamestar" />
+        </div>
+      </div>
+    </div>
+    <div id="audiooverlay">
+      <div id="audiogroup" class="active">
+        <img id="mkey" class="gamekey" />
+        <img id="audioicon" class="gamekey" />
+      </div>
+    </div>
+    <svg id="fadeouter" class="passevents" width="100%" height="100%">
+      <defs>
+        <mask id="fademask">
+          <rect id="fadebg" x="0" y="0" width="100%" height="100%" fill="white"></rect>
+          <circle id="fadecircle" cx="0" cy="0" r="1200" fill="black"></circle>
+        </mask>
+      </defs>
+      <rect id="faderect" x="0" y="0" width="100%" height="100%" mask="url(#fademask)"></rect>
+    </svg>
+    <div id="fademsgbox">
+      <div id="fademsg">
+      </div>
+      <div id="fadecontinue">
+        <a href="javascript:void 0;">Continue</a>
+      </div>
+    </div>
+    <![endif]>
+  </body>
+</html>

@@ -1,0 +1,479 @@
+html, body { overflow: hidden; }
+body {
+    font-family: 'Itim', cursive;
+    background: #6C9971;
+    color: #FFFC79;
+    margin: 0px;
+}
+img {
+    -moz-user-select: none;
+    -o-user-select: none;
+    -webkit-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+.pagecontainer {
+    position: absolute;
+    top: 0px;
+    height: 626px;
+    left: 0px;
+    right: 0px;
+    z-index: 1;
+}
+.pagecontainer.hide {
+    display: none;
+}
+.pagecontainer.hide .page {
+    z-index: 0;
+}
+.page {
+    display: block;
+    width: 766px;
+    height: 626px;
+    margin: 0px auto;
+    position: relative;
+    left: 0px;
+    opacity: 1;
+}
+
+#apology {
+    text-align: center;
+    font-size: 200%;
+}
+
+#intro {
+    font-family: 'Lakki Reddy', cursive;
+}
+.introfish {
+    position: absolute;
+    pointer-events: none;
+}
+#introstar {
+    position: absolute;
+    left: 318px;
+    top: 128px;
+    width: 84px;
+    height: 84px;
+    opacity: 0;
+}
+#title1 {
+    font-size: 40px;
+    width: 244px;
+    position: absolute;
+    left: 262px;
+    top: 150px;
+    text-shadow: 1px 1px 1px black;
+}
+#title2 {
+    font-size: 60px;
+    width: 284px;
+    position: absolute;
+    left: 242px;
+    top: 176px;
+    text-shadow: 1px 1px 1px black;
+}
+#credit {
+    font-family: 'Itim', cursive;
+    font-size: 20px;
+    position: absolute;
+    left: 361px;
+    top: 232px;
+    opacity: 0.5;
+}
+#introplay {
+    font-family: 'Itim', cursive;
+    font-size: 30px;
+    position: absolute;
+    left: 261px;
+    top: 332px;
+    opacity: 0;
+    display: none;
+}
+a {
+    color: #B4FEFF;
+    text-decoration: none;
+}
+
+#menu {
+    font-size: 20px;
+}
+.menuimg {
+    float: left;
+    width: 84px;
+    height: 114px;
+}
+#menuback {
+    position: absolute;
+    left: 20px;
+    top: 20px;
+}
+#menuexplain {
+    position: absolute;
+    top: 20px;
+    left: 100px;
+    right: 100px;
+    text-align: center;
+    font-size: 28px;
+}
+#menuselect {
+    position: absolute;
+    bottom: 0px;
+    left: 0px;
+    right: 0px;
+    text-align: center;
+}
+#menu0 {
+    position: absolute;
+    left: 50px;
+    top: 60px;
+    right: 50px;
+}
+#menu1 {
+    position: absolute;
+    left: 50px;
+    top: 160px;
+    right: 50px;
+}
+#menu2 {
+    position: absolute;
+    left: 50px;
+    top: 260px;
+    right: 50px;
+}
+#menu3 {
+    position: absolute;
+    left: 50px;
+    top: 360px;
+    right: 50px;
+}
+#menu4 {
+    position: absolute;
+    left: 50px;
+    top: 460px;
+    right: 50px;
+}
+.levelbutton {
+    display: inline-block;
+    border-radius: 6px;
+    padding: 2px 4px 0px;
+    background: #9CFF9E;
+    color: black;
+    margin: 5px 3px;
+    cursor: pointer;
+    box-shadow: 1px 1px 2px black;
+    text-align: center;
+    width: 48px;
+    white-space: nowrap;
+    overflow: hidden;
+    min-height: 53px;
+}
+.levelbutton.f:hover {
+    background: #fff;
+}
+.levelbutton.o:hover {
+    background: #6CFF6F;
+}
+.levelbutton.l {
+    color: #555;
+    background: #ccc;
+    opacity: 0.6;
+    cursor: default;
+}
+.levelbutton.f {
+    color: #000;
+    background: #e3e3e3;
+}
+.levelbuttonstardiv {
+    display: inline-block;
+    width: 24px;
+    height: 24px;
+    overflow: hidden;
+}
+.levelbuttonstar {
+    position: relative;
+    width: 34px;
+    height: 34px;
+    left: -5px;
+    top: -5px;
+}
+
+#window {
+    position: relative;
+    background: #3f98a0;
+}
+#board_outer {
+    position: absolute;
+    overflow: hidden;
+}
+#board {
+    transform-origin: 0px 0px;
+}
+#gridlines {
+    position: absolute;
+}
+#border {
+    position: absolute;
+}
+.gridline {
+    stroke: white;
+    stroke-width: 2px;
+    fill: none;
+    opacity: 0.4;
+}
+#console {
+    position: absolute;
+    left: 0px;
+}
+.gametext {
+    position: absolute;
+    color: #FFFC79;
+    text-shadow: 1px 1px 1px #000;
+    font-size: 20px;
+}
+#leveldesc {
+    left: 212px;
+    top: 4px;
+}
+#hungertext {
+    left: 136px;
+    top: 39px;
+}
+#chargetext {
+    left: 136px;
+    top: 74px;
+}
+.gamekey {
+    position: absolute;
+}
+.active {
+    cursor: pointer;
+}
+.inactive {
+    cursor: default;
+}
+#qkey {
+    top: 2px;
+    left: 52px;
+    width: 35px;
+    height: 35px;
+}
+#wkey {
+    top: 2px;
+    left: 87px;
+    width: 35px;
+    height: 35px;
+}
+#akey {
+    top: 37px;
+    left: 52px;
+    width: 35px;
+    height: 35px;
+}
+#skey {
+    top: 37px;
+    left: 87px;
+    width: 35px;
+    height: 35px;
+}
+#_key {
+    top: 72px;
+    left: 42px;
+    width: 90px;
+    height: 35px;
+}
+#quitgroup {
+    position: absolute;
+    top: 2px;
+    left: 545px;
+    width: 84px;
+    height: 30px;
+}
+#esckey, #desckey, #vesckey {
+    width: 40px;
+    height: 30px;
+}
+#quittext {
+    left: 43px;
+    top: 2px;
+}
+#restartgroup {
+    position: absolute;
+    top: 2px;
+    left: 635px;
+    width: 99px;
+    height: 30px;
+}
+#rkey, #drkey, #vrkey {
+    width: 30px;
+    height: 30px;
+}
+#restarttext {
+    left: 33px;
+    top: 2px;
+}
+#vnkey {
+    width: 30px;
+    height: 30px;
+}
+.gamestar {
+    position: absolute;
+    top: 66px;
+    width: 50px;
+    height: 50px;
+}
+#star1 {
+    left: 581px;
+}
+#star2 {
+    left: 536px;
+}
+#star3 {
+    left: 491px;
+}
+#hunger1 {
+    position: absolute;
+    left: 206px;
+    top: 29px;
+    width: 530px;
+    height: 45px;
+}
+#hungerbar {
+    position: absolute;
+    left: 211px;
+    top: 43px;
+    height: 17px;
+    background: #0B8E00;
+}
+#hungerbar.yellow {
+    background: #DEE629;
+}
+#hungerbar.red {
+    background: #790A0A;
+}
+#hunger2 {
+    position: absolute;
+    left: 206px;
+    top: 29px;
+    width: 530px;
+    height: 45px;
+}
+
+#audiooverlay {
+    display: none;
+    position: absolute;
+    width: 766px;
+    left: 0px;
+    right: 0px;
+    height: 0px;
+    margin: 0px auto;
+    z-index: 1;
+}
+#audiogroup {
+    position: absolute;
+    top: 590px;
+    left: 673px;
+    width: 99px;
+    height: 30px;
+}
+#mkey {
+    width: 30px;
+    height: 30px;
+}
+#audioicon {
+    left: 33px;
+    width: 30px;
+    height: 30px;
+}
+
+#victory {
+    position: absolute;
+    left: 0px;
+    right: 0px;
+    display: none;
+}
+#defeat {
+    position: absolute;
+    left: 0px;
+    right: 0px;
+}
+#victorytext, #defeattext {
+    position: absolute;
+    top: 20px;
+    left: 0px;
+    right: 0px;
+    height: 75px;
+    text-align: center;
+    font-family: 'Lakki Reddy', cursive;
+    font-size: 65px;
+    text-shadow: 2px 2px 2px black;
+}
+#vnextgroup, #vrestartgroup, #vquitgroup, #drestartgroup, #dquitgroup {
+    position: absolute;
+    top: 110px;
+}
+#vnextgroup {
+    left: 251px;
+}
+#vrestartgroup {
+    left: 336px;
+}
+#vquitgroup {
+    left: 441px;
+}
+#drestartgroup {
+    left: 271px;
+}
+#dquitgroup {
+    left: 421px;
+}
+#vnexttext, #vrestarttext, #drestarttext {
+    left: 33px;
+    top: 2px;
+}
+#vquittext, #dquittext {
+    left: 43px;
+    top: 2px;
+}
+
+.sol {
+    fill: none;
+    stroke: #fff;
+    stroke-linecap: round;
+    stroke-width: 5px;
+}
+
+#fadeouter {
+    position: absolute;
+    display: none;
+    top: 0px;
+    bottom: 0px;
+    left: 0px;
+    right: 0px;
+    z-index: 3;
+}
+#fadeouter.passevents {
+    pointer-events: none;
+}
+#fadebg {
+    opacity: 0;
+}
+#faderect {
+    fill: #000;
+    opacity: 0.5;
+}
+#fademsgbox {
+    position: absolute;
+    z-index: 3;
+    padding: 8px;
+    background: #e6e481;
+    color: #000;
+    box-shadow: 1px 1px 2px #000;
+    display: none;
+}
+#fadecontinue {
+    text-align: right;
+    padding-top: 10px;
+}
+#fadecontinue a {
+    color: #00f;
+}

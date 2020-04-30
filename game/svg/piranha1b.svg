@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg viewBox="0 0 84 84" version="1.1" xmlns="http://www.w3.org/2000/svg">
+<g transform="translate(0 -968.36)">
+<g transform="translate(-63,-63)">
+<path fill="#9bb48f" stroke-width=".8" d="m122.63 1069.6s3.5733-1.4825 5.6282-0.5577c2.055 0.9248 0.19761-4.3601-1.8779-6.1685-2.0755-1.8085-13.513-8.1826-22.515-5.83-12.594 3.2916-14.285 18.607-14.285 18.607s-7.5322-0.5754-9.2377 2.0891c-0.58221 0.9096-1.0928 3.2795 0.14021 3.8344 1.233 0.5548 3.021 2.0157 2.7617 3.2385-0.31027 1.4632 1.5712 6.695 2.1132 4.181 0.67903-3.1498 5.1677-7.6712 5.1677-7.6712s6.7214 14.424 19.468 12.158c7.2622-1.2912 12.467-6.9641 14.173-10.416 1.7058-3.4523-1.5358-13.464-1.5358-13.464z" stroke-linecap="round" stroke="#000"/>
+<path fill="none" stroke-width=".8" d="m122.6 1069.6s-6.1203 3.9392-7.7436 1.0416" stroke-linecap="round" stroke="#000"/>
+<path fill="#9d9d9d" stroke-width=".8" d="m118.05 1071.7 4.258 5.6536-1.1915-6.8815z" stroke-linecap="round" stroke="#000" stroke-linejoin="round"/>
+<path fill="#9b9b9b" stroke-width=".8" d="m124.35 1069 2.4848 7.3828 0.8069-7.5281z" stroke-linecap="round" stroke="#000" stroke-linejoin="round"/>
+<path fill="none" stroke-width=".8" d="m89.772 1078.7s-4.3869 0.2293-5.1068 4.3313" stroke-linecap="round" stroke="#000"/>
+<path fill="#6b885c" d="m103.58 1063.1s-7.5974-4.9914-8.6003-3.5021c0.67641 1.1355 0.65549 2.507 0.65549 2.507s-2.9491-0.2209-2.999 1.0496c1.0991 0.7401 1.8514 1.5628 1.8514 1.5628s-2.4101 3.7786-0.06022 3.1772c2.0847-3.6065 5.9257-2.6433 5.9257-2.6433" stroke-width="1px" stroke="#000"/>
+<path fill="#6b885c" d="m42.375 32a1.5 4.125 0 1 1 -3 0 1.5 4.125 0 1 1 3 0z" transform="matrix(.34416 -.93891 -.93891 -.34416 121.73 1137.9)" style="color:#000000"/>
+<path fill="#6b885c" d="m42.375 32a1.5 4.125 0 1 1 -3 0 1.5 4.125 0 1 1 3 0z" transform="matrix(.50930 -.64298 -.66073 -.48279 98.99 1129.5)" style="color:#000000"/>
+<path fill="#6b885c" d="m42.375 32a1.5 4.125 0 1 1 -3 0 1.5 4.125 0 1 1 3 0z" transform="matrix(.54280 -.48583 -.49112 -.53741 89.871 1119.6)" style="color:#000000"/>
+<path fill="none" transform="translate(0 968.36)" stroke-width="1px" d="m115.08 111.67 5.8336 3.0936" stroke-linecap="round" stroke="#000"/>
+<path fill="none" transform="translate(0 968.36)" stroke-width="1px" d="m119.5 110.6-3.182 5.922" stroke-linecap="round" stroke="#000"/>
+</g>
+</g>
+</svg>

@@ -1,0 +1,21 @@
+{
+  "name": "its-eelectric",
+  "version": "0.2.0",
+  "private": true,
+  "description": "An original web-based puzzle game",
+  "keywords": [
+    "puzzle",
+    "game",
+    "eel"
+  ],
+  "repository": "https://github.com/sbj42/its-eelectric.git",
+  "author": "James Clark <jameswclark@gmail.com>",
+  "license": "MIT",
+  "scripts": {
+    "start": "lws --stack lws-static -d game"
+  },
+  "devDependencies": {
+    "lws": "^3.0.0",
+    "lws-static": "^2.0.0"
+  }
+}
