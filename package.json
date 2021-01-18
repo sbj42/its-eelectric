@@ -15,7 +15,7 @@
     "start": "lws --stack lws-static -d game"
   },
   "devDependencies": {
-    "lws": "^3.0.0",
+    "lws": "^3.1.0",
     "lws-static": "^2.0.0"
   }
 }
